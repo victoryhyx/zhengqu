@@ -1,0 +1,40 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-06-08 14:36:35
+ * @LastEditTime: 2021-06-08 16:56:23
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \zhengqu\zhengqu\zhengqu\html\components\header.html
+-->
+<div class="header">
+  <span class="top_menu" onclick="showOrhideSiteList()"><img src="./img/icon/menu.png">集团网站</span>
+</div>
+<div id="zq-navbar">
+  <div class="list-unstyled">
+    <ul>
+      <li>
+        <p>>集团网站</p>
+        <div>公司介绍、产品介绍、新闻动态信息</div>
+      </li>
+      <li>
+        <p>>寻息开发者</p>
+        <div>位置物联网合作、解决方案和服务</div>
+      </li>
+      <li>
+        <p>> 真趣工业互联网</p>
+        <div>工业领域产品、解决方案和服务</div>
+      </li>
+      <li>
+        <p>> 真趣大健康</p>
+        <div>医疗 / 养老领域产品、解决方案和服务</div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+  let siteListShow = false
+  function showOrhideSiteList() {
+    siteListShow = !siteListShow
+    siteListShow ? $("#zq-navbar").slideDown(500) : $("#zq-navbar").slideUp(500)
+  }
+</script>
